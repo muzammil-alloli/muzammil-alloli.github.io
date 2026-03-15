@@ -1,4 +1,4 @@
-// Year in footer
+// Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Mobile menu toggle
@@ -10,7 +10,7 @@ menuBtn?.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', String(isOpen));
 });
 
-// Close mobile menu after clicking a link
+// Close menu after clicking a link
 mobileNav?.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     mobileNav.classList.remove('open');
