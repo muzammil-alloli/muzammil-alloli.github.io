@@ -3,76 +3,174 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Muzammil Alloli — Developer portfolio. Projects, skills, and contact." />
+  <meta name="theme-color" content="#0b1220" />
+
   <title>Muzammil Alloli | Portfolio</title>
+
+  <!-- Open Graph (nice preview when sharing) -->
+  <meta property="og:title" content="Muzammil Alloli | Portfolio" />
+  <meta property="og:description" content="Projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
+  <!-- Sticky top bar -->
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#home">Muzammil</a>
+      <a class="brand" href="#home" aria-label="Go to top">Muzammil</a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        Menu
+      </button>
     </div>
+
+    <!-- Mobile menu -->
+    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main id="home" class="container">
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="card hero">
-      <div>
+      <div class="hero-left">
+        <p class="kicker">Developer • GitHub Pages Portfolio</p>
         <h1>Muzammil Alloli</h1>
-        <p class="muted">Developer • Portfolio on GitHub Pages</p>
+        <p class="muted">
+          I build clean, responsive web projects and I’m improving my skills step by step.
+          I enjoy learning by building real things.
+        </p>
 
         <div class="buttons">
           <a class="btn primary" href="#projects">See Projects</a>
           <a class="btn" href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Optional: add your resume file later -->
+          <!-- <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a> -->
+        </div>
+
+        <div class="social">
+          <a href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="dot">•</span>
+          <!-- Replace with your real LinkedIn -->
+          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span class="dot">•</span>
+          <!-- Replace with your real email -->
+          <a href="mailto:yourname@email.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="mini-card">
+          <h2 class="mini-title">Quick Info</h2>
+          <ul class="mini-list">
+            <li><b>Focus:</b> Frontend / Full Stack</li>
+            <li><b>Learning:</b> React, DSA</li>
+            <li><b>Open to:</b> Internship / Junior Role</li>
+          </ul>
         </div>
 
         <div class="badges">
           <span class="badge">HTML</span>
           <span class="badge">CSS</span>
           <span class="badge">JavaScript</span>
+          <span class="badge">Git</span>
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section id="about" class="card section">
       <h2>About</h2>
       <p class="muted">
-        Write 3–5 lines here about yourself: what you’re learning, what you like building,
-        and what type of role you want (internship / junior dev / freelance).
+        Paste your real summary here (3–6 lines). Keep it simple:
+        what you build, what you’re learning, and what kind of work you want.
       </p>
-      <ul class="list">
-        <li><b>Location:</b> (your city/country)</li>
-        <li><b>Focus:</b> (frontend / backend / full stack)</li>
-        <li><b>Currently learning:</b> (example: React, Node, DSA)</li>
-      </ul>
+
+      <div class="two-col">
+        <div class="info">
+          <h3>Highlights</h3>
+          <ul class="list">
+            <li>Comfortable building responsive pages</li>
+            <li>Practice by creating projects and improving them</li>
+            <li>Interested in clean UI and performance</li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <h3>Details</h3>
+          <ul class="list">
+            <li><b>Location:</b> Your city/country</li>
+            <li><b>Languages:</b> English, (add others)</li>
+            <li><b>Tools:</b> VS Code, GitHub</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects -->
+    <!-- SKILLS -->
+    <section id="skills" class="card section">
+      <h2>Skills</h2>
+      <p class="muted">Edit this list based on what you реально know.</p>
+
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p class="muted">HTML, CSS, JS, Responsive Design</p>
+        </div>
+        <div class="skill">
+          <h3>Frameworks (learning)</h3>
+          <p class="muted">React, Next.js</p>
+        </div>
+        <div class="skill">
+          <h3>Backend (optional)</h3>
+          <p class="muted">Node.js, Express, REST APIs</p>
+        </div>
+        <div class="skill">
+          <h3>Tools</h3>
+          <p class="muted">Git, GitHub, Chrome DevTools</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="card section">
       <h2>Projects</h2>
-      <p class="muted">Add your best 2–4 projects. Keep it simple and clear.</p>
+      <p class="muted">
+        Add 2–4 best projects. For each project: what it does + tech used + links.
+      </p>
 
-      <div class="grid">
+      <div class="project-grid">
         <article class="project">
-          <h3>Project 1 — (Name)</h3>
-          <p class="muted">1–2 lines: what it does + why it’s useful.</p>
+          <h3>Project 1 — Portfolio Website</h3>
+          <p class="muted">A responsive portfolio hosted on GitHub Pages.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span>
+          </div>
           <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://muzammil-alloli.github.io/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/muzammil-alloli/muzammil-alloli.github.io" target="_blank" rel="noreferrer">Code</a>
           </div>
         </article>
 
         <article class="project">
           <h3>Project 2 — (Name)</h3>
-          <p class="muted">1–2 lines: what it does + tech used.</p>
+          <p class="muted">1–2 lines: what it does and why it’s useful.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">UI</span>
+          </div>
           <div class="proj-links">
             <a href="#" target="_blank" rel="noreferrer">Live</a>
             <a href="#" target="_blank" rel="noreferrer">Code</a>
@@ -82,6 +180,9 @@
         <article class="project">
           <h3>Project 3 — (Name)</h3>
           <p class="muted">1–2 lines: problem + your solution.</p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">CSS</span><span class="tag">Components</span>
+          </div>
           <div class="proj-links">
             <a href="#" target="_blank" rel="noreferrer">Live</a>
             <a href="#" target="_blank" rel="noreferrer">Code</a>
@@ -90,15 +191,27 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="card section">
       <h2>Contact</h2>
-      <p class="muted">Add your email and LinkedIn so people can reach you quickly.</p>
+      <p class="muted">
+        Put your real email + LinkedIn. (A contact form is optional.)
+      </p>
 
-      <div class="contact">
-        <div><b>Email:</b> yourname@email.com</div>
-        <div><b>LinkedIn:</b> <a href="#" target="_blank" rel="noreferrer">your-link</a></div>
+      <div class="contact-box">
+        <div><b>Email:</b> <a href="mailto:yourname@email.com">yourname@email.com</a></div>
+        <div><b>LinkedIn:</b> <a href="#" target="_blank" rel="noreferrer">Add your LinkedIn link</a></div>
+        <div><b>GitHub:</b> <a href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">muzammil-alloli</a></div>
       </div>
+
+      <!-- OPTIONAL contact form (needs Formspree or similar)
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+      -->
     </section>
 
     <footer class="footer muted">
@@ -106,8 +219,6 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
