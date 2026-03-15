@@ -1,13 +1,14 @@
-/* Simple clean styling */
 :root{
   --bg:#0b1220;
   --card:#121a2b;
   --text:#e7eefc;
   --muted:#a9b4cc;
   --accent:#6c63ff;
+  --accent2:#f50057;
 }
 
 *{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
 
 body{
   margin:0;
@@ -17,42 +18,106 @@ body{
   line-height:1.6;
 }
 
-main{
-  max-width: 900px;
+/* Top bar */
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(11,18,32,0.65);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.topbar-inner{
+  max-width: 980px;
   margin: 0 auto;
-  padding: 64px 20px;
+  padding: 14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 14px;
+}
+
+.brand{
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: var(--text);
+  text-decoration:none;
+}
+
+.nav{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.nav a{
+  color: var(--muted);
+  text-decoration:none;
+  font-weight: 650;
+}
+.nav a:hover{ color: var(--text); }
+
+/* Layout */
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 26px 20px 64px;
 }
 
 .card{
   background: rgba(18,26,43,0.85);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
-  padding: 28px;
+  padding: 22px;
   box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+  margin-top: 18px;
 }
 
-h1{
-  margin:0 0 8px;
-  font-size: 2.2rem;
+.hero h1{
+  margin:0 0 6px;
+  font-size: clamp(2rem, 4vw, 2.6rem);
 }
 
-p{
-  margin: 0 0 14px;
-  color: var(--muted);
+h2{
+  margin: 0 0 10px;
+  font-size: 1.3rem;
 }
 
-a{
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-}
-a:hover{ text-decoration: underline; }
+.muted{ color: var(--muted); }
 
+/* Buttons */
+.buttons{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 10px;
+}
+
+.btn{
+  display:inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 700;
+}
+
+.btn.primary{
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+
+.btn:hover{ filter: brightness(1.06); }
+
+/* Badges */
 .badges{
   display:flex;
   gap:10px;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .badge{
   padding: 6px 10px;
@@ -61,4 +126,60 @@ a:hover{ text-decoration: underline; }
   background: rgba(255,255,255,0.06);
   color: var(--text);
   font-size: 0.9rem;
+  font-weight: 650;
+}
+
+/* About list */
+.list{
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+/* Projects grid */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project{
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.project h3{
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.proj-links{
+  display:flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.proj-links a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 750;
+}
+.proj-links a:hover{ text-decoration: underline; }
+
+/* Contact + footer */
+.contact{
+  display:grid;
+  gap: 8px;
+}
+
+.footer{
+  margin-top: 18px;
+  text-align:center;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 860px){
+  .grid{ grid-template-columns: 1fr; }
 }
