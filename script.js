@@ -1,19 +1,30 @@
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Mobile menu toggle
-const menuBtn = document.getElementById('menuBtn');
-const mobileNav = document.getElementById('mobileNav');
-
-menuBtn?.addEventListener('click', () => {
-  const isOpen = mobileNav.classList.toggle('open');
-  menuBtn.setAttribute('aria-expanded', String(isOpen));
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-// Close menu after clicking a link
-mobileNav?.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  });
+// Simple reveal animation on scroll
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.skill-category, .project-card, .timeline-item').forEach(el => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(20px)";
+    el.style.transition = "0.6s ease-out";
+    observer.observe(el);
 });
