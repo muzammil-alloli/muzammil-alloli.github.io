@@ -3,28 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Muzammil Alloli — Developer portfolio. Projects, skills, and contact." />
+  <meta name="description" content="Muzammil Alloli — Laravel Developer (PHP, REST APIs). Backend architecture, API development, MySQL/DynamoDB, Swagger documentation." />
   <meta name="theme-color" content="#0b1220" />
 
-  <title>Muzammil Alloli | Portfolio</title>
+  <title>Muzammil Alloli | Laravel Developer</title>
 
-  <!-- Open Graph (nice preview when sharing) -->
-  <meta property="og:title" content="Muzammil Alloli | Portfolio" />
-  <meta property="og:description" content="Projects, skills, and contact." />
+  <meta property="og:title" content="Muzammil Alloli | Laravel Developer" />
+  <meta property="og:description" content="Backend architecture • REST APIs • MySQL/DynamoDB • Swagger" />
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Sticky top bar -->
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="#home" aria-label="Go to top">Muzammil</a>
 
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -34,59 +33,76 @@
       </button>
     </div>
 
-    <!-- Mobile menu -->
-    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
+    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="home" class="container">
+
     <!-- HERO -->
     <section class="card hero">
       <div class="hero-left">
-        <p class="kicker">Developer • GitHub Pages Portfolio</p>
+        <p class="kicker">Laravel Developer • PHP • REST APIs</p>
+
         <h1>Muzammil Alloli</h1>
+
         <p class="muted">
-          I build clean, responsive web projects and I’m improving my skills step by step.
-          I enjoy learning by building real things.
+          Result-oriented Laravel Developer with <b>2.5+ years</b> of hands-on experience in
+          <b>backend architecture</b>, <b>API development</b>, and <b>database optimization</b>.
+          Currently building scalable web applications at <b>NeoSoft Services</b>.
         </p>
 
-        <div class="buttons">
-          <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn" href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">GitHub</a>
-          <!-- Optional: add your resume file later -->
-          <!-- <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a> -->
+        <div class="quick">
+          <span class="pill">Laravel</span>
+          <span class="pill">Lumen</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">DynamoDB</span>
+          <span class="pill">Swagger</span>
+          <span class="pill">Stripe</span>
+          <span class="pill">n8n</span>
         </div>
 
-        <div class="social">
-          <a href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/muzammil-alloli" target="_blank" rel="noreferrer">LinkedIn</a>
+
+          <!-- Optional: add your resume pdf later
+          Put a file here: assets/Muzammil-Alloli-Resume.pdf
+          <a class="btn" href="assets/Muzammil-Alloli-Resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+          -->
+        </div>
+
+        <div class="meta muted">
+          <span><b>Location:</b> Solapur, Maharashtra (India)</span>
           <span class="dot">•</span>
-          <!-- Replace with your real LinkedIn -->
-          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span class="dot">•</span>
-          <!-- Replace with your real email -->
-          <a href="mailto:yourname@email.com">Email</a>
+          <span><b>Email:</b> <a href="mailto:muzammilalloli411@gmail.com">muzammilalloli411@gmail.com</a></span>
         </div>
       </div>
 
       <div class="hero-right">
         <div class="mini-card">
-          <h2 class="mini-title">Quick Info</h2>
+          <h2 class="mini-title">What I do</h2>
           <ul class="mini-list">
-            <li><b>Focus:</b> Frontend / Full Stack</li>
-            <li><b>Learning:</b> React, DSA</li>
-            <li><b>Open to:</b> Internship / Junior Role</li>
+            <li>Build scalable REST APIs using Laravel / Lumen</li>
+            <li>Design and optimize MySQL schemas & queries</li>
+            <li>Maintain hybrid data systems (MySQL + DynamoDB)</li>
+            <li>Ship clear API docs (Swagger) for teams</li>
           </ul>
         </div>
 
-        <div class="badges">
-          <span class="badge">HTML</span>
-          <span class="badge">CSS</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">Git</span>
+        <div class="mini-card">
+          <h2 class="mini-title">Strengths</h2>
+          <ul class="mini-list">
+            <li>Clean code (PSR) + maintainability</li>
+            <li>Requirement analysis & client communication</li>
+            <li>Debugging, regression & integration testing</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -95,26 +111,27 @@
     <section id="about" class="card section">
       <h2>About</h2>
       <p class="muted">
-        Paste your real summary here (3–6 lines). Keep it simple:
-        what you build, what you’re learning, and what kind of work you want.
+        I’m a backend-focused developer in the PHP ecosystem, experienced in building production-grade web applications,
+        designing APIs, handling complex workflows, and improving performance with database optimization.
+        I value clean architecture, clear documentation, and reliable deployments.
       </p>
 
       <div class="two-col">
         <div class="info">
-          <h3>Highlights</h3>
+          <h3>Core Focus</h3>
           <ul class="list">
-            <li>Comfortable building responsive pages</li>
-            <li>Practice by creating projects and improving them</li>
-            <li>Interested in clean UI and performance</li>
+            <li><b>Backend Architecture:</b> RESTful APIs, auth flows, controllers/services design</li>
+            <li><b>Database Work:</b> schema design, indexing, query optimization, reporting</li>
+            <li><b>Documentation:</b> Swagger UI to align frontend/mobile teams</li>
           </ul>
         </div>
 
         <div class="info">
-          <h3>Details</h3>
+          <h3>Extras</h3>
           <ul class="list">
-            <li><b>Location:</b> Your city/country</li>
-            <li><b>Languages:</b> English, (add others)</li>
-            <li><b>Tools:</b> VS Code, GitHub</li>
+            <li><b>Frontend basics:</b> HTML/CSS/JS/jQuery (for portals, dashboards, and UI fixes)</li>
+            <li><b>Automation:</b> n8n workflow automation</li>
+            <li><b>Learning:</b> Python</li>
           </ul>
         </div>
       </div>
@@ -123,25 +140,69 @@
     <!-- SKILLS -->
     <section id="skills" class="card section">
       <h2>Skills</h2>
-      <p class="muted">Edit this list based on what you реально know.</p>
 
       <div class="skill-grid">
         <div class="skill">
+          <h3>Backend</h3>
+          <p class="muted">PHP 8, Laravel, Lumen, REST APIs</p>
+        </div>
+
+        <div class="skill">
+          <h3>Database</h3>
+          <p class="muted">MySQL, DynamoDB (hybrid architectures)</p>
+        </div>
+
+        <div class="skill">
           <h3>Frontend</h3>
-          <p class="muted">HTML, CSS, JS, Responsive Design</p>
+          <p class="muted">HTML5, CSS3, JavaScript, jQuery, Alpine.js</p>
         </div>
-        <div class="skill">
-          <h3>Frameworks (learning)</h3>
-          <p class="muted">React, Next.js</p>
-        </div>
-        <div class="skill">
-          <h3>Backend (optional)</h3>
-          <p class="muted">Node.js, Express, REST APIs</p>
-        </div>
+
         <div class="skill">
           <h3>Tools</h3>
-          <p class="muted">Git, GitHub, Chrome DevTools</p>
+          <p class="muted">Git, Postman, Swagger, Stripe, n8n</p>
         </div>
+      </div>
+
+      <div class="info soft">
+        <h3>Soft Skills</h3>
+        <div class="soft-grid">
+          <span class="pill softpill">Team Collaboration</span>
+          <span class="pill softpill">Problem Solving</span>
+          <span class="pill softpill">Client Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="card section">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job-head">
+            <h3>Laravel Developer — NeoSoft Services</h3>
+            <p class="muted">June 2023 – Present</p>
+          </div>
+          <ul class="list">
+            <li>Developing scalable Laravel applications and REST APIs for real-world business workflows.</li>
+            <li>Optimizing MySQL queries and improving response times by refactoring slow logic.</li>
+            <li>Creating centralized API documentation using Swagger for frontend/mobile integration.</li>
+            <li>Writing clean, maintainable code and supporting peer reviews for stability.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>MES Technical Consultant — Rein Solutions</h3>
+            <p class="muted">Feb 2019 – March 2023</p>
+          </div>
+          <ul class="list">
+            <li>Analyzed complex manufacturing workflows and translated requirements into technical specs.</li>
+            <li>Executed SQL queries for validation, reporting, and debugging production issues.</li>
+            <li>Performed integration & regression testing to reduce deployment issues in live production.</li>
+            <li>Provided time-critical support during downtime and ensured system stability.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -149,69 +210,112 @@
     <section id="projects" class="card section">
       <h2>Projects</h2>
       <p class="muted">
-        Add 2–4 best projects. For each project: what it does + tech used + links.
+        Selected projects from healthcare + SaaS platforms. (Add live links if available; otherwise keep “Code: private”.)
       </p>
 
       <div class="project-grid">
         <article class="project">
-          <h3>Project 1 — Portfolio Website</h3>
-          <p class="muted">A responsive portfolio hosted on GitHub Pages.</p>
+          <h3>UAE Corporate Tax SaaS Platform</h3>
+          <p class="muted">
+            SaaS tax filing portal mirroring UAE corporate tax flows. Built a wizard-style multi-step form with
+            complex calculations without page reloads.
+          </p>
           <div class="tags">
-            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span>
+            <span class="tag">Laravel 12</span><span class="tag">Blade</span><span class="tag">Alpine.js</span>
+            <span class="tag">n8n</span><span class="tag">Stripe</span>
           </div>
           <div class="proj-links">
-            <a href="https://muzammil-alloli.github.io/" target="_blank" rel="noreferrer">Live</a>
-            <a href="https://github.com/muzammil-alloli/muzammil-alloli.github.io" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Live (add link)</a>
+            <a href="#" target="_blank" rel="noreferrer">Code (add link/private)</a>
           </div>
         </article>
 
         <article class="project">
-          <h3>Project 2 — (Name)</h3>
-          <p class="muted">1–2 lines: what it does and why it’s useful.</p>
+          <h3>Doctor Assessment & Learning Portal (LMS)</h3>
+          <p class="muted">
+            LMS for medical professionals with a logic-driven 6-module workflow, scheduled content release,
+            and final exam unlock after completion.
+          </p>
           <div class="tags">
-            <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">UI</span>
+            <span class="tag">Laravel 7</span><span class="tag">PHP</span><span class="tag">MySQL</span>
           </div>
           <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Live (add link)</a>
+            <a href="#" target="_blank" rel="noreferrer">Code (add link/private)</a>
           </div>
         </article>
 
         <article class="project">
-          <h3>Project 3 — (Name)</h3>
-          <p class="muted">1–2 lines: problem + your solution.</p>
+          <h3>Clinical Research & Survey Portal</h3>
+          <p class="muted">
+            Secure data collection platform with OTP authentication and “Save as Draft” for long forms (50+ questions).
+            Reporting system exports analytics-ready tables.
+          </p>
           <div class="tags">
-            <span class="tag">React</span><span class="tag">CSS</span><span class="tag">Components</span>
+            <span class="tag">Laravel 8</span><span class="tag">OTP</span><span class="tag">Reporting</span>
           </div>
           <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Live (add link)</a>
+            <a href="#" target="_blank" rel="noreferrer">Code (add link/private)</a>
           </div>
         </article>
+
+        <article class="project">
+          <h3>Weston Doctor Survey System</h3>
+          <p class="muted">
+            Survey mapping to doctors, admin-controlled agreement workflow, and robust survey export features.
+          </p>
+          <div class="tags">
+            <span class="tag">Laravel 7</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" target="_blank" rel="noreferrer">Live (add link)</a>
+            <a href="#" target="_blank" rel="noreferrer">Code (add link/private)</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Enterprise Backend API Maintenance</h3>
+          <p class="muted">
+            Maintained Lumen backend for healthcare app with complex routing/controllers and hybrid MySQL + DynamoDB.
+            Refactored legacy code to improve stability while supporting Angular feature updates.
+          </p>
+          <div class="tags">
+            <span class="tag">Lumen</span><span class="tag">MySQL</span><span class="tag">DynamoDB</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" target="_blank" rel="noreferrer">Docs (add link)</a>
+            <a href="#" target="_blank" rel="noreferrer">Code (add link/private)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card section">
+      <h2>Education</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <h3>B.E. (ENTC)</h3>
+          <p class="muted">NK Orchid College — 2017</p>
+        </div>
+        <div class="edu-item">
+          <h3>Diploma in Engineering</h3>
+          <p class="muted">S.P.M. Polytechnic — 2014</p>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="card section">
       <h2>Contact</h2>
-      <p class="muted">
-        Put your real email + LinkedIn. (A contact form is optional.)
-      </p>
+      <p class="muted">Best way to reach me:</p>
 
       <div class="contact-box">
-        <div><b>Email:</b> <a href="mailto:yourname@email.com">yourname@email.com</a></div>
-        <div><b>LinkedIn:</b> <a href="#" target="_blank" rel="noreferrer">Add your LinkedIn link</a></div>
-        <div><b>GitHub:</b> <a href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">muzammil-alloli</a></div>
+        <div><b>Email:</b> <a href="mailto:muzammilalloli411@gmail.com">muzammilalloli411@gmail.com</a></div>
+        <div><b>LinkedIn:</b> <a href="https://linkedin.com/in/muzammil-alloli" target="_blank" rel="noreferrer">linkedin.com/in/muzammil-alloli</a></div>
+        <div><b>GitHub:</b> <a href="https://github.com/muzammil-alloli" target="_blank" rel="noreferrer">github.com/muzammil-alloli</a></div>
       </div>
-
-      <!-- OPTIONAL contact form (needs Formspree or similar)
-      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input name="name" placeholder="Your name" required />
-        <input name="email" type="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-        <button class="btn primary" type="submit">Send</button>
-      </form>
-      -->
     </section>
 
     <footer class="footer muted">
