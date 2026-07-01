@@ -3,79 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muzammil Alloli | Senior Laravel Developer</title>
+    <title>Muzammil Alloli | Full Stack Laravel Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">MUZAMMIL<span>.</span></div>
+        <div class="logo">MA<span>.</span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+            <li><a href="#contact" class="nav-btn">Contact Me</a></li>
         </ul>
     </nav>
 
     <header class="hero" id="about">
         <div class="hero-content">
-            <span class="badge">Open to Opportunities</span>
+            <span class="badge">Open to New Opportunities</span>
             <h1>Muzammil Alloli</h1>
-            <h2>Senior Laravel Developer & API Architect</h2>
-            <p>Result-oriented developer with <strong>5+ years of professional experience</strong>. Specializing in building high-traffic RESTful APIs and scalable backend systems at <strong>NeoSoft Services</strong>.</p>
+            <h2>Full Stack <span class="highlight">Laravel Developer</span></h2>
+            <p>
+                Result-oriented developer with <strong>5+ years of experience</strong> in software development. 
+                Specializing in building scalable backend architectures with <strong>PHP (Laravel/Lumen)</strong> 
+                and modern frontends using <strong>Alpine.js & Angular</strong>.
+            </p>
             <div class="hero-btns">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="YOUR_RESUME_LINK.pdf" class="btn secondary" target="_blank"><i class="fas fa-file-download"></i> Download CV</a>
+                <a href="#projects" class="btn primary">Explore Projects</a>
+                <a href="https://linkedin.com/in/muzammil-alloli" target="_blank" class="btn secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </header>
 
     <section id="skills" class="section">
-        <h3 class="section-title">Technical Toolbox</h3>
-        <div class="skills-container">
-            <div class="skill-category">
-                <i class="fas fa-server"></i>
-                <h4>Backend</h4>
-                <ul>
-                    <li>PHP 8 / Laravel 12</li>
-                    <li>Lumen Micro-framework</li>
-                    <li>RESTful API Architecture</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <i class="fas fa-database"></i>
-                <h4>Database</h4>
-                <ul>
-                    <li>MySQL & AWS DynamoDB</li>
-                    <li>PostgreSQL</li>
-                    <li>Database Optimization</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <i class="fas fa-microchip"></i>
-                <h4>Integrations</h4>
-                <ul>
-                    <li>n8n Automation</li>
-                    <li>Stripe / SMS Gateways</li>
-                    <li>Swagger / Postman</li>
-                </ul>
+        <div class="container">
+            <h3 class="section-title">Technical Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Backend</h4>
+                    <p>PHP 8, Laravel, Lumen, Node.js, Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-desktop"></i>
+                    <h4>Frontend</h4>
+                    <p>Alpine.js, Next.js, Angular, jQuery, CSS3/HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h4>Database & Cloud</h4>
+                    <p>MySQL, PostgreSQL, DynamoDB, AWS (EC2/S3)</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Automation & Tools</h4>
+                    <p>n8n, Git, Postman, Swagger UI, Stripe</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience and Projects sections follow similar structure... -->
+    <section id="experience" class="section gray-bg">
+        <div class="container">
+            <h3 class="section-title">Professional Journey</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time">June 2023 — Present</div>
+                    <div class="content">
+                        <h4>Laravel Developer</h4>
+                        <p class="company">NeoSoft Services</p>
+                        <ul>
+                            <li>Developing scalable RESTful APIs using Laravel and Lumen for high-traffic apps.</li>
+                            <li>Optimizing complex SQL queries and DynamoDB schemas to reduce latency.</li>
+                            <li>Implementing interactive documentation via Swagger for frontend collaboration.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">Feb 2019 — March 2023</div>
+                    <div class="content">
+                        <h4>MES Technical Consultant</h4>
+                        <p class="company">Rein Solutions</p>
+                        <ul>
+                            <li>Analyzed manufacturing workflows and translated requirements into technical logic.</li>
+                            <li>Managed production SQL databases and handled critical data validation.</li>
+                            <li>Built custom shop-floor interfaces using HTML/CSS and JavaScript.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h3 class="section-title">Featured Work</h3>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="tech-tag">Laravel 12 • n8n • Stripe</span>
+                        <h4>UAE Corporate Tax SaaS</h4>
+                        <p>A sophisticated tax filing portal with AI-powered IFRS reports and automated multi-step wizard forms using Alpine.js.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="tech-tag">Angular • Lumen • AWS</span>
+                        <h4>Healthcare Agency Portal</h4>
+                        <p>A comprehensive platform for healthcare agencies to manage patients, doctors, and schedules on a hybrid MySQL/DynamoDB architecture.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="tech-tag">Next.js • Python • PostgreSQL</span>
+                        <h4>REVOO - Business Listing</h4>
+                        <p>A location-based business directory allowing users to find local services and businesses to manage subscription-based listings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer id="contact">
-        <div class="footer-content">
-            <h3>Let's Connect</h3>
-            <p>Solapur, Maharashtra | <a href="mailto:muzammilalloli411@gmail.com">muzammilalloli411@gmail.com</a></p>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/muzammil-alloli/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div class="container">
+            <h2>Let's Build Something Together</h2>
+            <p>Based in Solapur, Maharashtra • Available for remote opportunities.</p>
+            <div class="footer-contact">
+                <a href="mailto:muzammilalloli411@gmail.com"><i class="fas fa-envelope"></i> muzammilalloli411@gmail.com</a>
+                <a href="tel:+918983122632"><i class="fas fa-phone"></i> +91 8983122632</a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/muzammil-alloli" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
+            <p class="copyright">&copy; 2024 Muzammil Alloli. All rights reserved.</p>
         </div>
     </footer>
 </body>
